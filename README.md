@@ -1,6 +1,8 @@
 # IniciacionProgramacion2017
 Material de Curso de Iniciación a la Programación 2017
 
+Diapositivas: http://slides.com/devcexx/intr_prog_acm#/
+
 ## Línea de los ejercicios
 
 Uno de los puntos comunes entre la gente que asistirá al curso es la realización de ejercicios que tengan que ver con juegos/videojuegos. Por otro lado, también consideramos que suele ser muy satisfactorio el ver cómo tu programa interactúa con el ordenador y su entorno: lectura de ficheros, generándolos...
