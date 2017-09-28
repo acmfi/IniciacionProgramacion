@@ -20,3 +20,42 @@ Movidas que hacer sobre esos ficheros: cifrarlos :D Para que nadie toque lo que 
 Tenemos unos ficheros que pueden contener libros enteros. Podemos hacer un análisis sobre elementos del texto: número de frases, tabla de frecuencia de palabras...
 
 Algo complementario a esto: se genera un texto aleatorio con un diccionario y vemos en qué se diferencian.
+
+
+# Estructura
+
+## ¿Qué es programar?
+
+### Paradigmas de la programación
+
+### ¿Para qué nos sirve?
+
+## La programación con Java
+
+### Elementos básicos de la programación en Java
+
+- Variables, condiciones, repeticiones y organización.
+
+### Variables
+### Tipos
+### Condicionales
+### Funciones
+### Recursión
+
+https://imgur.com/KzLyGAC
+
+#### Ejercicios
+
+- Módulo 10
+
+### Arrays
+### Loops
+
+#### Ejercicios
+
+- Hacer un mismo ejercicio con un `for` y con un `while`
+
+## Compilar y Ejecutar
+
+
+
