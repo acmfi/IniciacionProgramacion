@@ -8,7 +8,7 @@
   a4paper,
   left=10mm,
   top=10mm,
-  right=0mm 
+  right=4mm 
   }
 \title{Cheatsheet - Iniciación a la Programación}
 \author{ACM UPM}
@@ -55,6 +55,8 @@ Declarar una variable (\emph{[ ] significa que puede estar o no}):
   \end{tabular}
 \end{table}
 
+\vspace{-10}
+
 \section{Condicionales}
 \label{sec:condicionales}
 
@@ -87,6 +89,43 @@ if (condición) {
 
 if (condición && condición2) { }
 \end{verbatim}
+
+\section{Bucles}
+\label{sec:bucles}
+
+\begin{verbatim}
+for ([declarar var];[cond];[op tras bloque]){}
+while([condición]){}
+\end{verbatim}
+
+Serían válidos por tanto:
+
+\begin{verbatim}
+for(;;){}
+while(true){}
+\end{verbatim}
+
+Correspondencia entre bucles:
+\begin{verbatim}
+for (int i=0;i<10;i++){
+  System.out.println(i);
+}
+
+int i=0;
+while(i<10){
+  System.out.println(i);
+}
+\end{verbatim}
+
+\section{Funciones}
+\label{sec:funciones}
+
+\begin{verbatim}
+(tipo|void) nombre ([argumentos]){}
+int duplicar (int x) { return x*2; }
+void no_devuelve () { System.out.println("<3"); }
+\end{verbatim}
+La función puede tener \emph{modificadores} como: \texttt{public, private, static}. Esto queda fuera del temario de Prog I.
 
 \section{Anexo}
 \label{sec:anexo}
