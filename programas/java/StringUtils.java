@@ -4,7 +4,7 @@ public class StringUtils {
 
     static int buscar(char[] array, char c) {
 	int index = -1;
-	for (int i = 0; i < array.length; i++) {
+	for (int i = 0; i < array.length && index == -1; i++) {
 	    if (c == array[i]) {
 		index = i;
 	    }
