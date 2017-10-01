@@ -143,6 +143,7 @@ public class StringUtils {
 	if (args.length < 2) {
 	    System.out.println("Uso:");
 	    System.out.println("StringUtils <mayuscula | minuscula | info> texto");
+	    return;
 	}
 
 	char[] texto = args[1].toCharArray();
