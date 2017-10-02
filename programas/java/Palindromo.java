@@ -12,7 +12,7 @@ public class Palindromo {
           System.out.println(palArr[i-1] + " y " + palArr[palArr.length - i]);
           i++;
         }
-        return i == palArr.length / 2; // En caso de no encontrar discrepancias retornamos true
+        return i - 1 == palArr.length / 2; // En caso de no encontrar discrepancias retornamos true
     }
 
     public static void main(String args[]) {
