@@ -16,6 +16,8 @@ Arrays
 
 Control de flujo (después de switch):
 
+* Función que cuente el número de repeticiones de un elemento en una 
+array.
 * Función que devuelva el número de impares que hay en una lista.
 * Función que determina si un número es primo.
 * Función que compruebe si una fecha es válida (teniendo en cuenta días de cada mes y años bisiestos)
