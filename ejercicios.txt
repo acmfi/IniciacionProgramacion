@@ -1,0 +1,22 @@
+Funciones (antes de recursión):
+
+* Función de máximo
+* Función que compruebe si un año es bisiesto.
+  Un año es bisiesto si es divisible entre 4 y, o es divisible entre 400 o no es divisble entre 100.
+  (year % 4 == 0 && (year % 400 == 0 || year % 100 != 0)
+
+Funciones (después de recursión):
+
+* Función de potencia de enteros recursiva.
+
+Arrays
+
+* Función recursiva para multiplicar elementos de una array.
+* Función que ordene 3 números devolviéndolos en una array de tamaño 3.
+
+Control de flujo (después de switch):
+
+* Función que devuelva el número de impares que hay en una lista.
+* Función que determina si un número es primo.
+* Función que compruebe si una fecha es válida (teniendo en cuenta días de cada mes y años bisiestos)
+* Función que borre las vocales de un string.
