@@ -6,15 +6,13 @@ public class Palindromo {
 
     static boolean esPalindromo(String pal) {
         char [] palArr = pal.toCharArray(); // Necesitamos convertir la palabra en array de caracteres
+        int i = 1;
 
-        for (int i = 1; i-1 < palArr.length / 2; i++){ // El rango del for es hasta la mitad de la palabra
-            System.out.println(palArr[i-1] + " y " + palArr[palArr.length - i]);
-            if (palArr[i-1] != palArr[palArr.length - i]){ // Si el caracter de la izquierda no corresponde
-                System.out.println("falso"); // con el de la parte en "espejo"
-                return false; // retornamos el valor falso
-            }
+        while (i-1 < palArr.length/2 && palArr[i-1] == palArr[palArr.length - i]){
+          System.out.println(palArr[i-1] + " y " + palArr[palArr.length - i]);
+          i++;
         }
-        return true; // En caso de no encontrar discrepancias retornamos true
+        return i == palArr.length / 2; // En caso de no encontrar discrepancias retornamos true
     }
 
     public static void main(String args[]) {
