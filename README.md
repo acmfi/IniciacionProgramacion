@@ -43,6 +43,7 @@ Si alguno de estos comandos no os se encuentran, revisad que Java está bien ins
 No hace falta ejecutar los ejercicios. Se pueden hacer en papel simplemente. Recomendamos que si una vez pensados y hechos, se quieren probar, se mire la parte de recursos de [ejecutar un programa](#ejecutar-un-programa)
 
 **CONSETO 0**: Si tras 5 minutos no se te ocurre como hacer un ejercicio, búscalo en Google. Nunca lo busques si no lo has pensado.
+
 **CONSETO 1**: JAMÁS copies y pegues código. Primero trata de entenderlo, una vez lo hayas entendido, escríbelo a mano.
 
 Comenzaremos con unos ejercicios sencillos para poner en práctica la definición de funciones y el uso de condicionales:
