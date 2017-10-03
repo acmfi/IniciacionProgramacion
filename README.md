@@ -24,36 +24,23 @@ Algo complementario a esto: se genera un texto aleatorio con un diccionario y ve
 
 # Estructura
 
-## ¿Qué es programar?
+- ¿Qué es programar?
+  - Paradigmas de la programación
+  - ¿Para qué nos sirve?
+  - La programación con Java
 
-### Paradigmas de la programación
-
-### ¿Para qué nos sirve?
-
-## La programación con Java
-
-### Elementos básicos de la programación en Java
-
-- Variables, condiciones, repeticiones y organización.
-
-### Variables
-### Tipos
-### Condicionales
-### Funciones
-### Recursión
+- Elementos básicos de la programación en Java
+  - Variables, condiciones, repeticiones y organización.
+  - Variables
+  - Tipos
+  - Condicionales
+  - Funciones
+  - Recursión
 
 https://imgur.com/KzLyGAC
-
-#### Ejercicios
-
-- Módulo 10
-
-### Arrays
-### Loops
-
-#### Ejercicios
-
-- Hacer un mismo ejercicio con un `for` y con un `while`
+  - Arrays
+  - Loops
+  - Switch
 
 ## Compilar y Ejecutar
 
