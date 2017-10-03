@@ -36,8 +36,6 @@ Algo complementario a esto: se genera un texto aleatorio con un diccionario y ve
   - Condicionales
   - Funciones
   - Recursión
-
-https://imgur.com/KzLyGAC
   - Arrays
   - Loops
   - Switch
