@@ -3,6 +3,11 @@ Material de Curso de Iniciación a la Programación 2017
 
 Diapositivas: http://slides.com/devcexx/intr_prog_acm#/
 
+- [Estructura](#estructura)
+- [Compilar y Ejecutar](#compilar-y-ejecutar)
+- [Ejercicios](#ejercicios)
+
+
 # Estructura
 
 - ¿Qué es programar?
