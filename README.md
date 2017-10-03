@@ -24,7 +24,15 @@ Diapositivas: http://slides.com/devcexx/intr_prog_acm#/
 
 ## Compilar y Ejecutar
 
+En la terminal (cmd en Windows):
+
 ```bash
 javac nombre_fichero.java  #Compilar
 java  nombre_fichero       #Ejecutar un fichero que contenga un "main"
 ```
+
+Si alguno de estos comandos no os se encuentran, revisad que Java está bien instalado: acmupm.es/instalar_java
+
+## Ejercicios
+
+[Pendiente de hacer]
