@@ -42,7 +42,7 @@ Si alguno de estos comandos no os se encuentran, revisad que Java está bien ins
 
 No hace falta ejecutar los ejercicios. Se pueden hacer en papel simplemente. Recomendamos que si una vez pensados y hechos, se quieren probar, se mire la parte de recursos de [ejecutar un programa](#ejecutar-un-programa)
 
-**CONSETO 0**: Si tras 5 minutos no se te ocurre como hacer un ejercicio, búscalo en Google. Nunca lo busques si no lo has pensado.
+**CONSETO 0**: Si tras 5 minutos no se te ocurre como hacer un ejercicio, búscalo en Google. Nunca lo busques si no lo has pensado. Si no es vital para avanzar, tampoco hace falta buscarlo, es mejor seguir pensando en otro momento.
 
 **CONSETO 1**: JAMÁS copies y pegues código. Primero trata de entenderlo, una vez lo hayas entendido, escríbelo a mano.
 
@@ -68,7 +68,7 @@ Ahora vamos a repasar unos conceptos que se olvidan mucho de java, que es cómo 
 
 Y para mezclar lo dado:
 
-1. Mirar cómo se recorre de forma recursiva un array. Está en las diapositivas
+1. Mirar cómo se recorre de forma recursiva un array. Está en [las diapositivas](http://slides.com/devcexx/intr_prog_acm#/)
 2. Dado un array de `int`, devolver el mayor número contenido en él.
 
 ## Recursos
