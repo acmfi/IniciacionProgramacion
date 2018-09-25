@@ -1,69 +1,151 @@
-\documentclass[10pt,twocolumn]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MatPlotLib and Random Cheat Sheet
+%
+% Edited by Michelle Cristina de Sousa Baltazar
+%
+% http://matplotlib.org/api/pyplot_summary.html
+% http://matplotlib.org/users/pyplot_tutorial.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[spanish]{babel}
+\documentclass{article}
+\usepackage[landscape]{geometry}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{amsmath,amssymb}
+
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\title{Cheatsheet - Introducción a la Programación}
+\usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{geometry}
 
-\geometry{
-  a4paper,
-  left=10mm,
-  top=10mm,
-  right=4mm 
-  }
-\title{Cheatsheet - Iniciación a la Programación}
-\author{ACM UPM}
-
+\advance\topmargin-.8in
+\advance\textheight3in
+\advance\textwidth3in
+\advance\oddsidemargin-1.5in
+\advance\evensidemargin-1.5in
+\parindent0pt
+\parskip2pt
+\newcommand{\hr}{\centerline{\rule{3.5in}{1pt}}}
+%\colorbox[HTML]{e4e4e4}{\makebox[\textwidth-2\fboxsep][l]{texto}
 \begin{document}
-\maketitle
 
-\section{Tipos}
-\label{sec:tipos}
+\begin{center}{\huge{\textbf{Cheatsheet - Introducción a la Programación}}}\\
+{\large ACM UPM}
+\end{center}
+\begin{multicols*}{3}
 
-\begin{table}[h!]
-  \centering
-  \begin{tabular}[h]{p{3cm} p{3cm}}
-    \hline
-    \emph{tipo}     & \emph{bits} \\ \hline
-    \textbf{int}    & 32 \\
-    \textbf{float}  & 32 \\
-    \textbf{double} & 64 \\
-    \textbf{char}   & 16 \\
-    \textbf{Boolean}& \texttt{true | false} \\ \hline
-  \end{tabular}
-\end{table}
+\tikzstyle{mybox} = [draw=black, fill=white, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=10pt]
+\tikzstyle{fancytitle} =[fill=black, text=white, font=\bfseries]
+%------------ CONTEÚDO CAIXA RANDOM ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+\begin{verbatim}
+javac Mi_fichero.java
+java  Mi_fichero
+\end{verbatim}
+    \end{minipage}
+};
+%------------ CAIXA RANDOM ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Compilar y ejecutar};
+\end{tikzpicture}
 
-Declarar una variable (\emph{[ ] significa que puede estar o no}):
+
+%------------ CONTEÚDO CAIXA MatPlotLib ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+  \begin{minipage}{0.3\textwidth}
+    \begin{center}
+      \begin{tabular}[h]{p{3cm} p{3cm}}
+        \hline
+        \emph{tipo}     & \emph{bits} \\ \hline
+        \textbf{int}    & 32 \\
+        \textbf{float}  & 32 \\
+        \textbf{double} & 64 \\
+        \textbf{char}   & 16 \\
+        \textbf{Boolean}& \texttt{true | false} \\ \hline
+      \end{tabular}
+    \end{center}
+  Declarar una variable (\emph{[ ] significa que puede estar o no}):
+
+  \texttt{tipo nombre\_variable [= valor];}\\
+  \texttt{double distancia; // Declara sin valor}\\
+  \texttt{double distancia = 3.3;  // Declara con valor}\\
+\end{minipage}
+};
+%------------ CAIXA PRELIMINARES ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Tipos y variables};
+\end{tikzpicture}
+%------------ CONTEUDO EXEMPLO BASICO ---------------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+      \begin{center}
+        \begin{tabular}[h]{l l l}
+          \hline
+          && Aritméticos \\ \hline
+          +    & +=   & \texttt{variable}++\\
+          -    & -=   & \texttt{variable}- -\\
+          *    & *=   & \\
+          /    & /=   & \\
+          \%   & \%=  & \\ \hline
+          && Lógicos \\\hline
+          \&\& & $\parallel$ & \\ \hline
+          && Relacionales \\\hline
+          ==  & != $<=$ ~ $>=$  & \\
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+};
+%------------ EXEMPLO BASICO BOX ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Operadores};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
 
 \begin{verbatim}
-tipo nombre_variable [= valor];
-
-double distancia; // Declara pero no tiene valor
-double distancia = 3.3; // Declara y tiene valor
+switch (variable_a_comparar) {
+  case valor: instrucción; [beak;]
+  default: ;
+}
 \end{verbatim}
+\end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Control de flujo - Switch};
+\end{tikzpicture}
 
-\section{Operadores}
-\label{sec:operadores}
+\begin{tikzpicture}
+  \node[] {
+    \begin{minipage}{0.3\textwidth}
+      \begin{center}
+        \includegraphics[width=0.3\textwidth]{./acmblack.png}
+        \hspace{15pt}
+        \includegraphics[width=0.3\textwidth]{./qr.jpg}
+      \end{center}
 
-\begin{table}[h]
-  \begin{tabular}[h]{l l l}
-    \hline
-    && Aritméticos \\ \hline
-    +    & +=   & \texttt{variable}++\\ 
-    -    & -=   & \texttt{variable}- -\\
-    **   & *=   & \\
-    /    & /=   & \\
-    \%   & \%=  & \\ \hline
-    && Lógicos \\\hline
-    \&\& & $\parallel$ & \\ \hline
-    && Relacionales \\\hline
-     ==  & != $<=g$ ~ $>=$  & \\
-  \end{tabular}
-\end{table}
+    \end{minipage}
+  };
+  \node[] at (1.6,-1.2) {Únete a ACM};
+\end{tikzpicture}
 
-\section{Condicionales}
-\label{sec:condicionales}
-
-También conocido como ``control de flujo''. Permite cambiar \emph{qué} se ejecuta según ciertas \emph{condiciones}.
+%------------ CONTEUDO DOIS EIXOS ---------------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+  También conocido como ``control de flujo''. Permite cambiar \emph{qué} se ejecuta según ciertas \emph{condiciones}.
 
 \begin{verbatim}
 if (condición) {
@@ -82,8 +164,8 @@ if (condición){
   haz esto otro;
 }
 \end{verbatim}
-Los condicionales se pueden anidar \emph{ad infinitum}.
-Equivalencia en condicionales:
+  Los condicionales se pueden anidar \emph{ad infinitum}.
+  Equivalencia en condicionales:
 
 \begin{verbatim}
 if (condición) {
@@ -92,77 +174,103 @@ if (condición) {
 
 if (condición && condición2) { }
 \end{verbatim}
-
-\section{Bucles}
-\label{sec:bucles}
-
+    \end{minipage}
+};
+%------------ DOIS EIXOS BOX ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Control de flujo - Condicionales};
+\end{tikzpicture}
+%------------ CONTEÚDO COMANDOS DE TEXTO ---------------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
 \begin{verbatim}
 for ([declarar var];[cond];[op tras bloque]){}
 while([condición]){}
 \end{verbatim}
 
-Serían válidos por tanto:
+  Serían válidos por tanto:
 
 \begin{verbatim}
 for(;;){}
 while(true){}
 \end{verbatim}
 
-Correspondencia entre bucles:
+  Correspondencia entre bucles:
 \begin{verbatim}
 for (int i=0;i<10;i++){
   System.out.println(i);
 }
 
 int i=0;
-while(i<10){
-  System.out.println(i);
-}
+while(i<10){ System.out.println(i); }
 \end{verbatim}
-
-\section{Funciones}
-\label{sec:funciones}
-
+    \end{minipage}
+};
+%------------ COMANDOS DE TEXTO BOX ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Bucles - for y while};
+\end{tikzpicture}
+%------------ CONTEUDO PROPRIEDADES ---------------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
 \begin{verbatim}
 (tipo|void) nombre ([argumentos]){}
 int duplicar (int x) { return x*2; }
 void no_devuelve () { System.out.println("<3"); }
+
+
+class Clase {
+  public static void main (String[] args) (
+    //Código a ejecutar al llamarse con java
+  }
+}
+
 \end{verbatim}
-La función puede tener \emph{modificadores} como: \texttt{public, private, static}. Esto queda fuera del temario de Prog I.
+  La función puede tener \emph{modificadores} como: \texttt{public, private, static}. Esto queda fuera del temario de Prog I.
 
-\section{Anexo}
-\label{sec:anexo}
+    \end{minipage}
+};
+%------------ PROPRIEDADES BOX ----------------
+\node[fancytitle, right=10pt] at (box.north west) {Funciones};
+\end{tikzpicture}
 
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{|cc|cc|cc|}
-  \hline
-  13          & CR         & 71         & G            & 100 & d               \\ \hline  
-  32          &            & 72         & H            & 101 & e               \\ \hline
-  40          & (          & 73         & I            & 102 & f               \\ \hline
-  41          & )          & 74         & J            & 103 & g               \\ \hline
-  42          & *          & 75         & K            & 104 & h               \\ \hline
-  43          & +          & 76         & L            & 105 & i               \\ \hline
-  44          & ,          & 77         & M            & 106 & j               \\ \hline
-  \textbf{48} & \textbf{0} & 78         & N            & 107 & k               \\ \hline
-  49          & 1          & 79         & O            & 108 & l               \\ \hline
-  50          & 2          & 80         & P            & 109 & m               \\ \hline
-  51          & 3          & 81         & Q            & 110 & n               \\ \hline
-  52          & 4          & 82         & R            & 111 & o               \\ \hline
-  53          & 5          & 83         & S            & 112 & p               \\ \hline
-  54          & 6          & 84         & T            & 113 & q               \\ \hline
-  55          & 7          & 85         & U            & 114 & r               \\ \hline
-  56          & 8          & 86         & V            & 115 & s               \\ \hline
-  57          & 9          & 87         & W            & 116 & t               \\ \hline
-  \textbf{65} & \textbf{A} & 88         & X            & 117 & u               \\ \hline
-  66          & B          & 89         & Y            & 118 & v               \\ \hline
-  67          & C          & 90         & Z            & 119 & w               \\ \hline
-  68          & D          & \textbf{97}& \textbf{a}   & 120 & x               \\ \hline
-  69          & E          & 98         & b            & 121 & y               \\ \hline
-  70          & F          & 99         & c            & 122 & z               \\ \hline
-  \end{tabular}
-  \caption{Mini-tabla ASCII }
-  \label{tab:ascii}
-\end{table}
+\begin{tikzpicture}
+\node [mybox] (box){%
+  \begin{minipage}{0.3\textwidth}
+    \begin{center}
+      \begin{tabular}{|cc|cc|cc|}
+        \hline
+        13          & CR         & 71         & G            & 100 & d               \\ \hline
+        32          &            & 72         & H            & 101 & e               \\ \hline
+        40          & (          & 73         & I            & 102 & f               \\ \hline
+        41          & )          & 74         & J            & 103 & g               \\ \hline
+        42          & *          & 75         & K            & 104 & h               \\ \hline
+        43          & +          & 76         & L            & 105 & i               \\ \hline
+        44          & ,          & 77         & M            & 106 & j               \\ \hline
+        \textbf{48} & \textbf{0} & 78         & N            & 107 & k               \\ \hline
+        49          & 1          & 79         & O            & 108 & l               \\ \hline
+        50          & 2          & 80         & P            & 109 & m               \\ \hline
+        51          & 3          & 81         & Q            & 110 & n               \\ \hline
+        52          & 4          & 82         & R            & 111 & o               \\ \hline
+        53          & 5          & 83         & S            & 112 & p               \\ \hline
+        54          & 6          & 84         & T            & 113 & q               \\ \hline
+        55          & 7          & 85         & U            & 114 & r               \\ \hline
+        56          & 8          & 86         & V            & 115 & s               \\ \hline
+        57          & 9          & 87         & W            & 116 & t               \\ \hline
+        \textbf{65} & \textbf{A} & 88         & X            & 117 & u               \\ \hline
+        66          & B          & 89         & Y            & 118 & v               \\ \hline
+        67          & C          & 90         & Z            & 119 & w               \\ \hline
+        68          & D          & \textbf{97}& \textbf{a}   & 120 & x               \\ \hline
+        69          & E          & 98         & b            & 121 & y               \\ \hline
+        70          & F          & 99         & c            & 122 & z               \\ \hline
+      \end{tabular}
+    \end{center}
+  \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Anexo};
+\end{tikzpicture}
 
+\vspace{15pt}{\tiny ** La asociación no se hace responsable del
+  mal uso de este documento.}
+\end{multicols*}
 \end{document}
