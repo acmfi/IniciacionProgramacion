@@ -1,5 +1,5 @@
-# Iniciación a la Programacion 2017
-Material de Curso de Iniciación a la Programación 2017
+# Iniciación a la Programacion
+Material de Curso de Iniciación a la Programación
 
 Diapositivas: http://slides.com/devcexx/intr_prog_acm#/
 
