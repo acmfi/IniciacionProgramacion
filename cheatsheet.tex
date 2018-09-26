@@ -96,7 +96,7 @@ java  Mi_fichero
           \hline
           && Aritméticos \\ \hline
           +    & +=   & \texttt{variable}++\\
-          -    & -=   & \texttt{variable}- -\\
+          -    & -=   & - -\texttt{variable}\\
           *    & *=   & \\
           /    & /=   & \\
           \%   & \%=  & \\ \hline
@@ -118,7 +118,7 @@ java  Mi_fichero
 
 \begin{verbatim}
 switch (variable_a_comparar) {
-  case valor: instrucción; [beak;]
+  case valor: instrucción; [break;]
   default: ;
 }
 \end{verbatim}
@@ -133,7 +133,7 @@ switch (variable_a_comparar) {
       \begin{center}
         \includegraphics[width=0.3\textwidth]{./img/acmblack.png}
         \hspace{15pt}
-        \includegraphics[width=0.3\textwidth]{./img/qr.jpg}
+        \includegraphics[width=0.3\textwidth]{./img/qrcode.png}
       \end{center}
 
     \end{minipage}
@@ -202,7 +202,7 @@ for (int i=0;i<10;i++){
 }
 
 int i=0;
-while(i<10){ System.out.println(i); }
+while(i<10){ System.out.println(i); i++;}
 \end{verbatim}
     \end{minipage}
 };
@@ -272,5 +272,199 @@ class Clase {
 
 \vspace{15pt}{\tiny ** La asociación no se hace responsable del
   mal uso de este documento.}
+
+\begin{tikzpicture}
+  \node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+      \begin{center}
+\begin{verbatim}
+Creación de arrays:
+new tipo[n] //Crea un array vacío de tamaño n
+<nombre_array> = {e1, e2, ...., en}
+
+new tipo[] {e1, e2, ..., en}
+//Crea un array con los elementos designado.
+
+
+Tamaño de un array:
+    Los arrays empiezan en 0 y acaban en -1.
+    Se puede comprobar su longitud con:
+        <nombre_del_array>.length;
+\end{verbatim}
+        \end{center}
+    \end{minipage}
+  };
+  \node[fancytitle, right=10pt] at (box.north west) {Arrays};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+      \begin{center}
+      \begin{tabular}{|cc|c|}
+      \hline
+      \textbf{Funciones Útiles} && \textbf{Descripción} \\ \hline
+      int length(); && Devuelve la longitud \\ \hline
+      char charAt(int i) && Devuelve el carácter en i \\ \hline
+      \end{tabular}
+      \end{center}
+\begin{verbatim}
+Si queremos concatenar dos Strings
+ debemos usar el operador '+':
+
+String x = "Cha" + "chi"; // x = Chachi
+
+Se pueden comparar dos strings
+usando .equals(String).
+
+s1 = "Chachi";
+s2 = "Cha" + "chi";
+s1 == s2; // Devuelve false
+s1.equals(s2) // Devuelve true
+\end{verbatim}
+  \end{minipage}
+  };
+  \node[fancytitle, right=10pt] at (box.north west) {Manejo de Strings};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    \node [mybox] (box){%
+      \begin{minipage}{0.3\textwidth}
+\begin{verbatim}
+Los modificadores indican a que clases,
+atributos o métodos se puede acceder
+\end{verbatim}
+        \begin{center}
+      \begin{tabular}{|cc|cc|c|}
+        \hline
+        && \textbf{Clase} && \textbf{Paquete} \\ \hline
+        \textbf{Private} && OK && NO \\ \hline
+        \textbf{sin modificador} && OK && OK \\ \hline
+        \textbf{protected} && OK && OK \\ \hline
+        \textbf{public} && OK && OK \\ \hline
+        && \textbf{Herencia} && \textbf{Otros} \\ \hline
+        \textbf{Private} && NO && NO \\ \hline
+        \textbf{sin modificador} && NO && NO \\ \hline
+        \textbf{protected} && OK && NO \\ \hline
+        \textbf{public} && OK && OK \\ \hline
+      \end{tabular}
+      \end{center}
+    \end{minipage}
+  };
+  \node[fancytitle, right=10pt] at (box.north west) {Clases e instancias};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+\begin{verbatim}
+ public class Padre {
+   public int X() {
+   }
+}
+public class Hijo extends Padre {
+   public int X() {
+     // Este método pertenece al padre,
+     // pero el hijo es capaz de heredarlo,
+     // aunque también es capaz de
+     // sobreescribir.
+   }
+}
+
+- Upcasting de un tipo a otro cuando se tiene
+la certeza de que sea interpretable.
+- Downcasting de un tipo a otro cuando no se
+está seguros de que sea interpretable.
+
+Vehiculo obj1 = new Coche();
+Coche c1 = (Coche) obj1;      // Downcasting
+
+*La clase String extiende de CharSequence*
+String str = "";
+CharSequence chs = str;       // Upcasting
+
+- Existe el operador instanceof que permite
+comprobar si el objeto de la izquierda es
+hijo del de la derecha.
+
+Vehiculo v1 = new Coche();
+Vehiculo v2 = new Camion();
+
+v1 instanceof Coche; // true
+v2 instanceof Camion; // true
+v2 instanceof Coche; // false
+
+- Las clases abstractas están implementadas
+parcialmente, algunos métodos los tienen que
+implementar las clases hijas.
+
+public abstract class Multiplicador {
+   public double multiplicar(double numero) {
+       return base * altura;
+    }
+
+    public abstract double factor();
+}
+\end{verbatim}
+    \end{minipage}
+    };
+    \node[fancytitle, right=10pt] at (box.north west) {Herencia};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+\begin{verbatim}
+Las interfaces solo definen los métodos,
+no el cuerpo
+
+public class Cubo implements Figura3D {
+    private double lado;
+
+    public Cubo(double lado) {
+        this.lado = lado;
+    }
+
+    public double volumen() {
+        return lado * lado * lado;
+    }
+}
+\end{verbatim}
+    \end{minipage}
+  };
+  \node[fancytitle, right=10pt] at (box.north west) {Interfaces};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+\begin{verbatim}
+La identidad es la región de memoria que
+ocupa nuestra instancia y, por tanto, es
+algo único a cada una. Se puede comparar
+con el operador ==.
+
+Coche c1 = new Coche("1234ABC", "rojo");
+Coche c2 = c1;
+
+c1 == c2; //true
+
+
+El estado es el conjunto de los valores de
+los atributosde una instancia. Solo se puede
+comparar con .equals si antes se ha
+modificado el método.
+
+*Una vez cambiado el método .equals*
+Coche c1 = new Coche("1234ABC", "rojo");
+Coche c2 = new Coche("1234ABC", "rojo");
+
+c1.equals(c2); // true
+\end{verbatim}
+    \end{minipage}
+  };
+  \node[fancytitle, right=10pt] at (box.north west) {Identidad vs. Estado};
+\end{tikzpicture}
+
 \end{multicols*}
 \end{document}
