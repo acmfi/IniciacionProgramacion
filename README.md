@@ -64,12 +64,19 @@ Ahora vamos a repasar unos conceptos que se olvidan mucho de java, que es cómo 
 2. Declarar un array de tipo `int` e inicializarlo con tamaño 10.
 3. Declarara un array de tipo `int` e inicializarlo en el momento con valores `1, 2, 3`
 
-**CONSETO 3**: La perfección se consigue con el tiempo. Si no te acuerdas bien cómo era algo exactamente, déjalo indicado. Ya volverás a ello más adelante o preguntarás cómo se hace. 
+**CONSETO 3**: La perfección se consigue con el tiempo. Si no te acuerdas bien cómo era algo exactamente, déjalo indicado. Ya volverás a ello más adelante o preguntarás cómo se hace.
 
 Y para mezclar lo dado:
 
 1. Mirar cómo se recorre de forma recursiva un array. Está en [las diapositivas](http://slides.com/devcexx/intr_prog_acm#/)
 2. Dado un array de `int`, devolver el mayor número contenido en él.
+
+### Más ejercicios
+
+Exisiten muchas webs donde se puede aprender a programar a medida que haces pequeños ejercicios. Os dejamos por aquí una selección de webs que recomendamos.
+
+- Codewars [https://www.codewars.com/](https://www.codewars.com/) :: Multitud de lenguajes y todo tipo de niveles. Pon **ACM UPM** como clan al registrarte si quieres conocer nuestra clasificación.
+- Uva online [https://uva.onlinejudge.org/](https://uva.onlinejudge.org/) :: Programación competitiva. La mayor colección de problemas de programación. Todo un referente mundial de ejercicios que mantiene la Universidad de Valladolid. Concursos como ICPC de la ACM tienen el mismo tipo de funcionamiento que esta web.
 
 ## Recursos
 
@@ -94,14 +101,13 @@ Para poder ejecutar un archivo java es necesario que tenga cierta estrutura. La 
 class Clase {
 
   // Zona donde se definen funciones
-  
-  
+
+
   public static void main ( String [] args ) {
-  
+
     // Zona de código que se ejecuta
-  
+
   }
 
 }
 ```
-
